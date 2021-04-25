@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ namespace TrabPrático.Models
         /// <summary>
         /// Id do utilizador 
         /// </summary>
+        [Key]
         public int IdUtilizador { get; set; }
 
         /// <summary>
