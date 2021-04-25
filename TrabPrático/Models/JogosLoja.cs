@@ -19,14 +19,14 @@ namespace TrabPrático.Models
         /// <summary>
         /// FK para a Loja 
         /// </summary>
-        [ForeignKey(nameof(Loja)]
+        [ForeignKey(nameof(Loja))]
         public int LojaFK { get; set; }
         public Loja Loja { get; set; }
 
         /// <summary>
         /// FK para os Jogos
         /// </summary>
-        [ForeignKey(nameof(Jogos)]
+        [ForeignKey(nameof(Jogos))]
         public int JogosFK { get; set; }
         public Jogos Jogos { get; set; }
     }
