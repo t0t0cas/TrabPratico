@@ -8,6 +8,11 @@ namespace TrabPrático.Models
 {
     public class Loja
     {
+        public Loja()
+        {
+            // inicializar a lista de Jogos
+            Jogos = new HashSet<JogosLoja>();
+        }
         /// <summary>
         /// Id da Loja
         /// </summary>
@@ -15,8 +20,20 @@ namespace TrabPrático.Models
         public int IdLoja { get; set; }
 
         /// <summary>
-        /// Links das lojas
+        /// Nome da Loja
         /// </summary>
-        public string Links { get; set;}
+        public string NomeLoja { get; set; }
+
+        /// <summary>
+        /// Fotografia da Loja
+        /// </summary>
+        public string ImagemLoja { get; set; }
+        
+      
+        //-------------------------------------
+        /// <summary>
+        /// lista dos Jogos ligados a Loja
+        /// </summary>
+        public ICollection<JogosLoja> Jogos { get; set; }
     }
 }

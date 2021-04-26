@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace TrabPrático.Models
 {
+    /// <summary>
+    /// Informações sobre os jogos
+    /// </summary>
     public class Jogos
     {
+        public Jogos()
+        {
+            // inicializar a lista de Cães do Criador
+            Loja = new HashSet<JogosLoja>();
+        }
+
         /// <summary>
         /// Id do jogo
         /// </summary>
@@ -43,5 +52,13 @@ namespace TrabPrático.Models
         /// Descrição do Jogo
         /// </summary>
         public string Descricao { get; set; }
+
+        /// <summary>
+        /// Links das lojas
+        /// </summary>
+        public string Links { get; set; }
+
+        //**********************************
+        public ICollection<JogosLoja> Loja { get; set;}
     }
 }

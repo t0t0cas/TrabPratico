@@ -32,6 +32,9 @@ namespace TrabPrático.Models
         /// Password do utilizador
         /// </summary>
         [Required(ErrorMessage = "O Nome é de preenchimento obrigatório")]
+        [StringLength(12, ErrorMessage = "O {0} não pode ter mais de {1} caracteres.")]
         public string Pass { get; set; }
+
+
     }
 }
