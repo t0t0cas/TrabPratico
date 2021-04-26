@@ -18,7 +18,14 @@ namespace TrabPrático.Models
         /// <summary>
         /// Nota da Review que o utilizador dará
         /// </summary>
-        public int NotaReview { get; set; }
+        [Required]
+        public double NotaReview { get; set; }
+
+        /// <summary>
+        /// Comentário que o utilizador dará ao jogo
+        /// </summary>
+        [Required]
+        public string Comentário { get; set; }
 
         //****************************************
 

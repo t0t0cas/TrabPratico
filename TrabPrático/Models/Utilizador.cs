@@ -8,6 +8,11 @@ namespace TrabPrático.Models
 {
     public class Utilizador
     {
+        public Utilizador(){
+             // inicializar a lista de Cães do Criador
+            UserReview = new HashSet<Review>();    
+        }
+
         /// <summary>
         /// Id do utilizador 
         /// </summary>
@@ -35,6 +40,9 @@ namespace TrabPrático.Models
         [StringLength(12, ErrorMessage = "O {0} não pode ter mais de {1} caracteres.")]
         public string Pass { get; set; }
 
+        //***********************
+
+        public ICollection<Review> UserReview { get; set; }
 
     }
 }

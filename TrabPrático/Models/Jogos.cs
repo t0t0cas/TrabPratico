@@ -14,7 +14,7 @@ namespace TrabPrático.Models
         public Jogos()
         {
             // inicializar a lista de Cães do Criador
-            Loja = new HashSet<JogosLoja>();
+            JogosReview = new HashSet<Review>();
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace TrabPrático.Models
         /// <summary>
         /// Média da avaliação dos utilizadores acerca do jogo
         /// </summary>
-        public int Media { get; set; }
+        public double Media { get; set; }
 
         /// <summary>
         /// Data de lançamento do jogo
@@ -56,9 +56,14 @@ namespace TrabPrático.Models
         /// <summary>
         /// Links das lojas
         /// </summary>
-        public string Links { get; set; }
+        public string Link1 { get; set; }
+
+        /// <summary>
+        /// Links das lojas
+        /// </summary>
+        public string Link2 { get; set; }
 
         //**********************************
-        public ICollection<JogosLoja> Loja { get; set;}
+        public ICollection<Review> JogosReview { get; set;}
     }
 }
