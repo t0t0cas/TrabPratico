@@ -20,6 +20,8 @@ namespace TrabPrático.Models
         /// </summary>
         public int NotaReview { get; set; }
 
+        //****************************************
+
         /// <summary>
         /// FK para o Utilizador que fez o Review
         /// </summary>        
