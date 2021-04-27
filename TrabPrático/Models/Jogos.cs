@@ -13,7 +13,7 @@ namespace TrabPrático.Models
     {
         public Jogos()
         {
-            // inicializar a lista de Cães do Criador
+            // inicializar a lista de Reviews do Jogo
             JogosReview = new HashSet<Review>();
         }
 
@@ -32,6 +32,11 @@ namespace TrabPrático.Models
         /// Categoria do jogo
         /// </summary>
         public string Tipo { get; set; }
+
+        /// <summary>
+        /// Categoria de idade do jogo Ex: Dark Souls III é +18
+        /// </summary>
+        public string CategoriaIdade { get; set; }
 
         /// <summary>
         /// Nota dada ao jogo

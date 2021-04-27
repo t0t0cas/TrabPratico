@@ -9,7 +9,7 @@ namespace TrabPrático.Models
     public class Utilizador
     {
         public Utilizador(){
-             // inicializar a lista de Cães do Criador
+             // inicializar a lista de review que o utilizador dá
             UserReview = new HashSet<Review>();    
         }
 
@@ -39,6 +39,11 @@ namespace TrabPrático.Models
         [Required(ErrorMessage = "A password é de preenchimento obrigatório")]
         [StringLength(12, ErrorMessage = "O {0} não pode ter mais de {1} caracteres.")]
         public string Pass { get; set; }
+
+        /// <summary>
+        /// Data de nascimento do utilizador
+        /// </summary>
+        public DateTime DataNascimento { get; set; }
 
         //***********************
 
