@@ -34,9 +34,9 @@ namespace TrabPrático.Models
         public string Tipo { get; set; }
 
         /// <summary>
-        /// Média da avaliação dos utilizadores acerca do jogo
+        /// Nota dada ao jogo
         /// </summary>
-        public double Media { get; set; }
+        public double Nota { get; set; }
 
         /// <summary>
         /// Data de lançamento do jogo
@@ -62,7 +62,11 @@ namespace TrabPrático.Models
         /// Links das lojas
         /// </summary>
         public string Link2 { get; set; }
-
+        
+        /// <summary>
+        /// Média da nota dada aos jogos pelos utilizadores 
+        /// </summary>
+        public double Media { get; set; }
         //**********************************
         public ICollection<Review> JogosReview { get; set;}
     }
