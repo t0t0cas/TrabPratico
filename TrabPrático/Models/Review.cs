@@ -25,7 +25,7 @@ namespace TrabPrático.Models
         /// Comentário que o utilizador dará ao jogo
         /// </summary>
         [Required]
-        public string Comentário { get; set; }
+        public string Comentario { get; set; }
 
         //****************************************
 
