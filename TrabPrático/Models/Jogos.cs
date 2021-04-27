@@ -67,6 +67,7 @@ namespace TrabPrático.Models
         /// Média da nota dada aos jogos pelos utilizadores 
         /// </summary>
         public double Media { get; set; }
+
         //**********************************
         public ICollection<Review> JogosReview { get; set;}
     }
