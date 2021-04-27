@@ -27,6 +27,11 @@ namespace TrabPrático.Models
         [Required]
         public string Comentario { get; set; }
 
+        /// <summary>
+        /// Data em que a review foi feita
+        /// </summary>
+        public DateTime DataReview { get; set; }
+
         //****************************************
 
         /// <summary>
@@ -39,8 +44,8 @@ namespace TrabPrático.Models
         /// <summary>
         /// FK para os Jogos
         /// </summary>
-        [ForeignKey(nameof(Jogos))]
+        [ForeignKey(nameof(Jogo))]
         public int JogoFK { get; set; }
-        public Utilizador Jogos { get; set; }
+        public Jogos Jogo { get; set; }
     }
 }
